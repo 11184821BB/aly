@@ -1,0 +1,15 @@
+
+ [
+  {
+    "pic1":"../../../static/image/s1.png","pic2":"../../../static/image/s12.png","p1":"华为nova 36G+64G 全网通版(亮黑色)","span1":"","price":"2599","qal":2,"p2":"华为5000mAh移动电源"
+  },
+  {
+    "pic1":"../../../static/image/s2.png","pic2":"../../../static/image/s13.png","p1":"华为v10 6G+64G 全网通版(珠光贝母)","span1":"￥2799","price":"1999","qal":2,"p2":"奇遇系列PC保护壳"
+  },
+  {
+    "pic1":"../../../static/image/gwc01.jpg","pic2":"../../../static/image/s21.png","p1":"华为P20 6G+64G 全网通版(珠光贝母)","span1":"￥3988","price":"3888","qal":1,"p2":"荣耀魔声耳机2 （熔岩红）"
+  },
+ {
+   "pic1":"../../../static/image/s1.png","pic2":"../../../static/image/s12.png","p1":"华为nova 36G+64G 全网通版(亮黑色)","span1":"","price":"2599","qal":2,"p2":"华为5000mAh移动电源"
+ }
+]

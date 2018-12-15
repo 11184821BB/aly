@@ -1,0 +1,83 @@
+需求分析：
+1、index页面和只是简单布局，然后进行拆分以及组装组件，实现代码的模块化以及复用，将部分数据写在data里然后进行v-for循环，减少代码的量。
+
+
+2、controller页面是简单布局，然后进行拆分以及组装组件，总共拆分4个组件，分别为ControllerHeader、controllerMain 、ControllerProduct、ControllerProduct四个组件。
+
+
+3、domain页面也是简单布局，然后进行拆分以及组装组件，
+引入了swiper轮播图的插件,该页面总共拆分五个组件，分别为DomainHeader、DomainIcon、DomainMain、DomainName、DomainReg。
+
+
+4、cloud页面也是进行了组件的拆分与组装，引入了swiper轮播图的插件，还有CloudBlog和CloudSpeak两个模块是从后台json提取数据，该页面总共拆分五个页面，分别为CloudBlogs、CloudHeader、CloudIcon、CloudMain、CloudSpeak，CloudSpeak组件里边实现对喜欢的博客可以送花的效果。
+
+
+5、my页面只是简单的布局，该页面所有的数据都是从后台拿到的，该页面总共拆分了三个组件，分别为MyHeader、MyList、MyMain，然后进行v-for循环其中的MyList组件。
+
+
+6、place页面的所有数据也是来自后台的，该页面总共拆分了五个组件，分别为PlaceHeader、PlaceMain、PlaceTeamwork、PlaceUl、PlaceFooter，里面实现了点击更多场地会出现更多的场地，而且该数据也是来自后台。
+
+
+7、store的数据全部从后台拿，总共拆分成三个组件StoreHeader、StoreMain、StoreGift、而且循环里边的StoreGift组件。
+
+
+8、cart页面总共拆分五个组件，分别为ShopcartHeader、ShopcartMain、ShopcartSwiper、ShopcartLi、ShopCartFooter。
+1)、功能需求
+(1)获取当前登录用户的购物车列表（完成）
+(2)统计当前的购物车中的商品总数量和总的支付金额（完成）
+(3)针对每件商品可以修改商品的数量,增加或者修改（完成）
+  条件:修改的数量最大不限，最少有一件（完成）
+(4)当修改数量时，实时重新计算商品总数量和总的支付金额（完成）
+2)、
+cart
+data: {
+    totalNum :0,
+    totalMoney:0,
+    Products:[]
+  }
+  methods:
+  {
+      //统计出总价格和总数量
+      _countCarts(products){}
+
+      //加载页面数据
+      _initPageData(){ }
+
+      //给每个商品增加件数
+      addQal(i){}
+
+      //给每个商品减少件数
+      minQal(i){}
+
+      created(){
+        //首页加载数据
+        this._initPageData()
+      },
+      watch:{
+
+        //监听shopcarts中的数量发生变化，重新计算
+        shopcarts:{
+          handler:function (n,o) {
+            this._countCarts(this.shopcarts)
+          }
+        }
+      }
+  }
+
+9、所有页面的footet都是引入了同一个IndexFooter组件，实现了router的跳转以及字体变换颜色，实现这块功能的代码如下：
+tabClick(index) {
+          this.nowIndex = index;
+          let href = index === 0 ? '/index' : index === 1 ? '/controller' : index === 2 ? '/cloud' : index === 3 ? '/my' : index === 4 ? '/cart' : '/index';
+          // 利用路由的push方法更新路径地址
+          this.$router.push(href)
+        }
+      }
+
+为了保证刷新页面后内容区和导航键一致，所以必须初始化页面
+     mounted(){
+        this.$nextTick(() => {
+          // 初始化，
+          this._initPage();
+        });
+      }
+

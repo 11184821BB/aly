@@ -1,0 +1,351 @@
+/*========================header=======================*/
+header{
+    height:.6rem;
+    background:#f6f5f4;
+}
+header ul{
+    display:flex;
+    height:100%;
+    padding:0 .15rem;
+    justify-content:space-between;
+    align-items: center;
+}
+header ul li:nth-child(1){
+    width:2.6rem;
+}
+header ul li:nth-child(1) input{
+    width:100%;
+    height:.28rem;
+    border-radius:.02rem;
+    border:0;
+    padding-left:.14rem;
+    font-size: 14px;
+    color: #333;
+}
+header ul li a .iconfont{
+    width:.23rem;
+    font-size:.26rem;
+    color:#333;
+}
+/*===========================main=========================*/
+::-webkit-scrollbar{
+    display:none;
+}
+main{
+    flex: 1;
+    overflow: auto;
+    /*background: #4cd964;*/
+}
+/*=================know===============*/
+main .know{
+    height: 1.2rem;
+    background: #fff;
+}
+main .know ul{
+    display: flex;
+    height: 100%;
+}
+main .know ul li{
+    flex:1;
+    text-align:center;
+}
+main .know ul li a{
+    display:block;
+    flex-direction:column;
+}
+main .know ul li a img{
+    height:.6rem;
+    margin:0 auto;
+    display:block;
+    margin-top:.13rem;
+}
+main .know ul li a span{
+    height:.37rem;
+    display:block;
+    line-height:.4rem;
+    color: #333;
+}
+/*================discuss============*/
+main .discuss{
+    padding: .08rem .15rem .2rem;
+    background: #fff;
+    overflow: hidden;
+    margin-top: .18rem;
+}
+main .discuss p{
+    font-size: .16rem;
+}
+main .discuss p:nth-of-type(1){
+    line-height: .4rem;
+}
+main .discuss .pic img{
+    width:100%;
+}
+main .discuss p:nth-of-type(2){
+    line-height: .45rem;
+}
+main .discuss p:nth-of-type(3){
+    line-height: .2rem;
+    font-size: .14rem;
+    color: #999ba4;
+}
+/*==============hotProducts==========*/
+main .hotProducts{
+    background: #fff;
+    padding: 0 .15rem .15rem;
+    margin-top: .18rem;
+}
+main .hotProducts p{
+    line-height:.49rem;
+    display: flex;
+    position: relative;
+    font-size: .16rem;
+}
+main .hotProducts p span{
+    font-size: .14rem;
+    padding-left: .15rem;
+    color: #999ba4;
+}
+main .hotProducts p a .iconfont{
+    font-size: .18rem;
+    position: absolute;
+    right: 0;
+}
+main .hotProducts ul{
+    display: -webkit-box;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+main .hotProducts ul li{
+    width: 45%;
+    text-align:center;
+    padding-bottom: .2rem;
+    padding:0 .1rem;
+    padding-left: 0;
+}
+main .hotProducts ul li a{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background: #f8f8f8;
+    padding: .2rem 0;
+}
+main .hotProducts ul li a img{
+    width: .8rem;
+    height: .8rem;
+}
+main .hotProducts ul li a span:nth-of-type(1){
+    line-height:.3rem;
+}
+main .hotProducts ul li a span:nth-of-type(2){
+    font-size:.12rem;
+    color:#909090
+}
+/*==================newflash==============*/
+main .newflash{
+    padding: .2rem .32rem;
+    display: flex;
+    margin-top: .18rem;
+    background: #fff;
+}
+main .newflash .left{
+    width: .5rem;
+    padding-top: .1rem;
+}
+main .newflash .left p{
+    font-style: italic;
+    font-size: .16rem;
+    font-weight: 800;
+}
+main .newflash .left p:nth-of-type(2){
+    color: #f15533;
+}
+main .newflash ul{
+    margin-top: .1rem;
+}
+main .newflash ul li{
+    padding-left: .1rem;
+}
+/*===================cdna=================*/
+main .cdna{
+    padding: 0 .18rem;
+    background: #fff;
+    margin-top: .18rem;
+}
+main .cdna p{
+    line-height:.49rem;
+    font-size: .16rem;
+}
+main .cdna ul{
+    display: -webkit-box;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+main .cdna ul li{
+    width: 70%;
+    padding-right: .05rem;
+}
+main .cdna ul li img{
+    width: 100%;
+}
+/*=====================market===================*/
+main .market{
+    background: #fff;
+    padding: 0 .15rem .15rem;
+    margin-top: .18rem;
+}
+main .market p{
+    line-height:.49rem;
+    display: flex;
+    position: relative;
+    font-size: .16rem;
+}
+main .market p span{
+    font-size: .14rem;
+    padding-left: .15rem;
+    color: #999ba4;
+}
+main .market p a .iconfont{
+    font-size: .18rem;
+    position: absolute;
+    right: 0;
+}
+main .market ul{
+    display: flex;
+    width: 100%;
+}
+main .market ul li{
+    flex: 1;
+    text-align:center;
+    /*padding-bottom: .2rem;*/
+    padding-left: 0;
+}
+main .market ul li a{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding: .1rem 0;
+}
+main .market ul li a img{
+    width: .6rem;
+    height: .6rem;
+}
+main .market ul li a span:nth-of-type(1){
+    line-height:.3rem;
+}
+main .market ul li a span:nth-of-type(2){
+    font-size:.12rem;
+    color:#909090
+}
+/*======================ai===================*/
+main .ai{
+    padding: 0 .18rem .2rem;
+    background: #fff;
+    margin-top: .18rem;
+}
+main .ai p{
+    line-height: .49rem;
+    font-size: .16rem;
+}
+main .ai .pic{
+    width: 100%;
+}
+
+main .ai .pic img{
+    width: 100%;
+}
+/*==================serve==============*/
+main .serve{
+    margin-top: .2rem;
+    padding: 0 .18rem;
+    background: #fff;
+}
+main .serve p{
+    line-height:.49rem;
+    display: flex;
+    position: relative;
+    font-size: .16rem;
+}
+main .serve p span{
+    font-size: .14rem;
+    padding-left: .15rem;
+    color: #999ba4;
+}
+main .serve p a .iconfont{
+    font-size: .18rem;
+    position: absolute;
+    right: 0;
+}
+main .serve ul{
+    height:.91rem;
+    display:flex;
+}
+main .serve ul li{
+    flex:1;
+    display:flex;
+    position: relative;
+}
+main .serve ul li div{
+    flex:1;
+    height:.45rem;
+    align-self:center;
+
+}
+main .serve ul li div a:nth-child(1){
+    line-height:.25rem;
+    display:block;
+    font-weight:bold;
+}
+main .serve ul li div a:nth-child(2){
+    line-height:.2rem;
+    font-size:12px;
+}
+main .serve ul li img{
+    width: .55rem;
+    height: .55rem;
+    top: .15rem;
+    right: .15rem;
+    position: absolute;
+}
+
+/*===================bottom==================*/
+main .bottom{
+    width: 100%;
+}
+
+main .bottom img{
+    width: 100%
+
+}
+
+/*==========================footer=======================*/
+footer{
+    height:.6rem;
+    background:#fff;
+    border-top:1px solid #ccc;
+}
+footer ul{
+    height:100%;
+    display:flex;
+}
+footer ul li{
+    flex:1;
+    text-align:center;
+    padding-top:.07rem;
+}
+footer ul li a{
+    display:block;
+}
+footer ul li a .iconfont{
+    display:block;
+    font-size:.25rem;
+}
+footer ul li a span{
+    display:block;
+    line-height:.2rem;
+    font-size:.13rem;
+}
